@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <link rel="stylesheet" href="style.css" media="screen">
+      <meta charset="UTF-8">
+      <title>Title</title>
+  </head>
+
+  <div class="survey">
+    <body>
+      <h1 id="title">Headphone's Inqury</h1>
+        <p id="description">This is a Headphone form order sheet</p>
+      <form id="survey-form">
+
+        <hr>
+
+        <div class="form-group-one">
+          <label id="name-label" for="name">Enter Your Full Name:<input id="name" type="text" placeholder="Last Name, First Name" class="form-setup" required/></label>
+          <label id="email-label" for="email">Enter your email that we will be responding back to<input id="email" type="email" placeholder="Email" class="form-setup" required/></label>
+          <label id="number-label" for="number">Enter the headphone item number<input type="number" id="number" min="1000" max="9000" placeholder="Headphone Serial #" class="form-setup"/></label>
+        </div>
+
+        <hr>
+
+        <div class="form-group">
+          <label id="dropdown-label" for="dropdown"> Reason for Inquiry?
+            <select id="dropdown" class="form-setup">
+              <option value="">(select one)</option>
+              <option value="1">Checking Stock</option>
+              <option value="2">Price Comparison</option>
+              <option value="3">Local Supplier</option>
+            </select>
+          </label>
+        </div>
+
+        <hr>
+        <div clas="form-group">
+          <label for="communication"> <input type="radio" name="digital-com" id="communication" value="1" class="checkbox"/> Email Me</label>
+          <label for="communication"> <input type="radio" name="digital-com"  value="2" class="checkbox"/> Text me</label>
+        </div>
+
+        <img src="company_logo.png" alt="coffee icon" class="image">
+
+        <div class="form-group-two">
+          <label for="text-area">How was your visit today?<textarea id="text-area" rows="4" cols="40" placeholder="Leave a detailed message about your experience today." name="reason-for-inquiry" class="textarea"></textarea></label>
+          <input type="submit" value="Submit" id="submit" class="submit">
+        </div>
+      </form>
+
+
+    </body>
+  </div>
+</html>
